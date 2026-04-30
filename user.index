@@ -5,12 +5,12 @@
 		<description>Anything made by Jester.</description>
 		<author>Jester aka Krelk</author>
 		<update version="0.0.1">
-			<file name="user.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/user.index"/>
+			<file name="user.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/user.index" />
 		</update>
 	</info>
 	<files>
-        <obsolete name="source.xml" />
+        <obsolete name="source.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/source.xml" />
 
-		<file name="jesters-addons.index" />
+		<file name="jesters-addons.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/jesters-addons.index" />
 	</files>
 </index>
