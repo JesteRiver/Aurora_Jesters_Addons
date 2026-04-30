@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sources.xml" />
+		</update>
+	</info>
+	<element name="Jesters' Addons" type="Source" source="Jester" id="ID_J_SOURCE_JESTERS_ADDONS">
+		<description>
+			Anything made by Jester.
+		</description>
+		<setters>
+			<set name="abbreviation">JA</set>
+			<set name="author" abbreviation="J">Jester</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20260230</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Jesters' Addons</name>
+		<description>Anything made by Jester.</description>
+		<author>Jester aka Krelk</author>
+		<update version="0.0.1">
+			<file name="user.index" />
+		</update>
+	</info>
+	<files>
+        <obsolete name="source.xml" />
+
+		<file name="jesters-addons.index" />
+	</files>
+</index>

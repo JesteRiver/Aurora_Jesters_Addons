@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Raccling</name>
+        <description></description>
+        <author>Jester aka Krelk</author>
+        <update version="0.0.1">
+          <file name="race-raccling.xml" />
+        </update>
+    </info>
+
+    <element name="Raccling" type="Race" source="Jesters’ Addons" id="ID_RACE_RACCLING">
+        <description>
+            <p class="flavor">Mischievous Racclings originate from the Faywunder - a veil between realms where nature is the lifeblood of the realms. Racclings are curious by nature - always wandering the world to discover, learn new skills, and create new stories to tell to their kin - all while obtaining new trinkets - illicitly gained or otherwise - to aid in their tale.</p>
+
+            <h4>RACCLING TRAITS</h4>
+            <p>
+              <span class="feature">Ability Score Increase.</span>+2 to an Ability Score of you choice, or +1 to Two Ability Score of your choice.<br/>
+              <span class="feature">Shardstone</span>1 Starter Shardstone of your choice.<br/>
+              <span class="feature">Age.</span>Racclings reach adulthood at 8 years old, and can live up to 60-70 years.<br/>
+              <span class="feature">Size.</span>Racclings are between 3 and 4 feet tall, and weigh between 50-120 pounds. Your size is small.<br/>
+              <span class="feature">Speed.</span>Your base walking speed is 25 feet.<br/>
+              <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.<br/>
+              <span class="feature">Keen Smell.</span>Racclings have advantage on Wisdom (Perception) checks that rely on smell.<br/>
+              <span class="feature">Languages.</span>You can speak, read, and write Common. You can speak Raccish.<br/>
+              <span class="feature">Subrace.</span>There are four main Raccling subraces, Lotorite, Larcenyx, Tanookin, and Embertail. Choose one of these subraces.<br/>
+        </p>
+        </description>
+        <rules>
+          <select type="Racial Trait" name="Ability Score Increase" supports="Raccling Score" number="2" />
+          <stat name="innate speed" value="30" bonus="base"/>
+          <grant type="Size" id="ID_SIZE_SMALL" />
+          <grant type="Vision" id="ID_VISION_DARKVISION" />
+          <grant type="Language" id="ID_LANGUAGE_COMMON" />
+          <grant type="Language" id="ID_LANGUAGE_RACCISH" />
+          <grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" />
+          <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RACCLING_SUBRACE" />
+        </rules>
+    </element>
+
+        <!--Raccling Score Ability Score Increase-->
+        <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_STRENGTH">
+            <compendium display="false" />
+            <supports>Raccling Score</supports>
+            <description>
+            <p>Your Strength score increases by 1.</p>
+            </description>
+            <sheet display="false" />
+            <rules>
+            <stat name="strength" value="1" alt="Raccling Score" />
+            </rules>
+        </element>
+        <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_DEXTERITY">
+            <compendium display="false" />
+            <supports>Raccling Score</supports>
+            <description>
+            <p>Your Dexterity score increases by 1.</p>
+            </description>
+            <sheet display="false" />
+            <rules>
+            <stat name="dexterity" value="1" alt="Raccling Score" />
+            </rules>
+        </element>
+        <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_CONSTITUTION">
+            <compendium display="false" />
+            <supports>Raccling Score</supports>
+            <description>
+            <p>Your Constitution score increases by 1.</p>
+            </description>
+            <sheet display="false" />
+            <rules>
+            <stat name="constitution" value="1" alt="Raccling Score" />
+            </rules>
+        </element>
+        <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_INTELLIGENCE">
+            <compendium display="false" />
+            <supports>Raccling Score</supports>
+            <description>
+            <p>Your Intelligence score increases by 1.</p>
+            </description>
+            <sheet display="false" />
+            <rules>
+            <stat name="intelligence" value="1" alt="Raccling Score" />
+            </rules>
+        </element>
+        <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_WISDOM">
+            <compendium display="false" />
+            <supports>Raccling Score</supports>
+            <description>
+            <p>Your Wisdom score increases by 1.</p>
+            </description>
+            <sheet display="false" />
+            <rules>
+            <stat name="wisdom" value="1" alt="Raccling Score" />
+            </rules>
+        </element>
+        <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_CHARISMA">
+            <compendium display="false" />
+            <supports>Raccling Score</supports>
+            <description>
+            <p>Your Charisma score increases by 1.</p>
+            </description>
+            <sheet display="false" />
+            <rules>
+            <stat name="charisma" value="1" alt="Raccling Score" />
+            </rules>
+        </element>
+
+</elements>
