@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/languages.xml" />
+		</update>
+	</info>
+
+	<!-- standard -->
+	<element name="Raccish" type="Language" source="Jester" id="ID_LANGUAGE_RACCISH">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Racclings. But is not Written</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Racclings</set>
+			<set name="script">Raccish</set>
+		</setters>
+	</element>
+</elements>

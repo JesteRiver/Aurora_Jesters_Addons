@@ -5,7 +5,7 @@
 			<file name="sources.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/source.xml" />
 		</update>
 	</info>
-	<element name="Jesters' Addons" type="Source" source="Jester" id="ID_J_SOURCE_JESTERS_ADDONS">
+	<element name="Jesters' Addons" type="Source" source="Jester" id="ID_JA_SOURCE_JESTERS_ADDONS">
 		<description>
 			Anything made by Jester.
 		</description>

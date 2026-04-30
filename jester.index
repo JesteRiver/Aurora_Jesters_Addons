@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Jesters' Addons</name>
+		<description>Anything made by Jester.</description>
+		<author>Jester</author>
+		<update version="0.0.1">
+			<file name="jester.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/jesters-addons.index" />
+		</update>
+	</info>
+	<files>
+        <obsolete name="source.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/source.xml" />
+
+		<!-- races -->
+		<file name="race-raccling.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/race-raccling.xml" />
+
+        <!-- items -->
+
+		<!-- misc -->
+		<file name="languages.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/languages.xml" />
+
+    </files>
+</index>
