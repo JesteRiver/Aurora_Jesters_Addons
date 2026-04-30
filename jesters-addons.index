@@ -3,7 +3,7 @@
 	<info>
 		<name>Jesters' Addons</name>
 		<description>Anything made by Jester.</description>
-		<author>Jester aka Krelk</author>
+		<author>Jester</author>
 		<update version="0.0.1">
 			<file name="jesters-addons.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/jesters-addons.index" />
 		</update>

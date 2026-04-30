@@ -9,7 +9,7 @@
         </update>
     </info>
 
-    <element name="Raccling" type="Race" source="Jesters’ Addons" id="ID_RACE_RACCLING">
+    <element name="Raccling" type="Race" source="Jester" id="ID_RACE_RACCLING">
         <description>
             <p class="flavor">Mischievous Racclings originate from the Faywunder - a veil between realms where nature is the lifeblood of the realms. Racclings are curious by nature - always wandering the world to discover, learn new skills, and create new stories to tell to their kin - all while obtaining new trinkets - illicitly gained or otherwise - to aid in their tale.</p>
 
