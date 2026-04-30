@@ -5,7 +5,7 @@
         <description></description>
         <author>Jester aka Krelk</author>
         <update version="0.0.1">
-          <file name="race-raccling.xml" />
+          <file name="race-raccling.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/race-raccling.xml"/>
         </update>
     </info>
 

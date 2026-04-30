@@ -5,7 +5,7 @@
 		<description>Anything made by Jester.</description>
 		<author>Jester aka Krelk</author>
 		<update version="0.0.1">
-			<file name="user.index" />
+			<file name="user.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/user.index"/>
 		</update>
 	</info>
 	<files>
