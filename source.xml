@@ -5,7 +5,7 @@
 		<description>Anything made by Jester.</description>
 		<author>Jester</author>
 		<update version="0.0.1">
-			<file name="jesters-addons.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/jesters-addons.index" />
+			<file name="jesters-addons.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/jester.index" />
 		</update>
 	</info>
     <element name="Jesters Addons" type="Source" source="source" id="ID_author_source_type_Jesters Addons">

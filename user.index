@@ -11,6 +11,6 @@
 	<files>
         <obsolete name="source.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/source.xml" />
 
-		<file name="jester.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/jesters-addons.index" />
+		<file name="jester.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/jester.index" />
 	</files>
 </index>
