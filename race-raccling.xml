@@ -15,19 +15,17 @@
 
             <h4>RACCLING TRAITS</h4>
             <p>
-              <span class="feature">Ability Score Increase.</span>+2 to an Ability Score of you choice, or +1 to Two Ability Score of your choice.<br/>
-              <span class="feature">Shardstone</span>1 Starter Shardstone of your choice.<br/>
+              <span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 2.<br/>
               <span class="feature">Age.</span>Racclings reach adulthood at 8 years old, and can live up to 60-70 years.<br/>
               <span class="feature">Size.</span>Racclings are between 3 and 4 feet tall, and weigh between 50-120 pounds. Your size is small.<br/>
-              <span class="feature">Speed.</span>Your base walking speed is 25 feet.<br/>
+              <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
               <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.<br/>
               <span class="feature">Keen Smell.</span>Racclings have advantage on Wisdom (Perception) checks that rely on smell.<br/>
               <span class="feature">Languages.</span>You can speak, read, and write Common. You can speak Raccish.<br/>
-              <span class="feature">Subrace.</span>There are four main Raccling subraces, Lotorite, Larcenyx, Tanookin, and Embertail. Choose one of these subraces.<br/>
+              <span class="feature">Subrace.</span>There are four main Racclingsubraces, Lotorite, Larcenyx, Tanookin, and Embertail. Choose one of these subraces.<br/>
         </p>
         </description>
         <rules>
-          <select type="Racial Trait" name="Ability Score Increase" supports="Raccling Score" number="2" />
           <stat name="innate speed" value="30" bonus="base"/>
           <grant type="Size" id="ID_SIZE_SMALL" />
           <grant type="Vision" id="ID_VISION_DARKVISION" />
@@ -35,75 +33,228 @@
           <grant type="Language" id="ID_LANGUAGE_RACCISH" />
           <grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" />
           <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RACCLING_SUBRACE" />
+		  <select type="Racial Trait" name="Ability Score Increase" supports="Raccling 1"/>
+		  <select type="Racial Trait" name="Ability Score Increase" supports="Raccling 2"/>
         </rules>
     </element>
+    <element name="Keen Smell" type="Racial Trait" source="Jester" id="ID_RACIAL_TRAIT_KEEN_SMELL">
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+		</rules>
+	</element>
+    <element name="Racclings Subrace" type="Racial Trait" source="Jester" id="ID_RACIAL_TRAIT_RACCLING_SUBRACE">
+		<description>
+			<p>There are four main Racclingsubraces, Lotorite, Larcenyx, Tanookin, and Embertail. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Racclings Subrace" supports="Raccling" />
+		</rules>
+	</element>
 
-        <!--Raccling Score Ability Score Increase-->
-        <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_STRENGTH">
-            <compendium display="false" />
-            <supports>Raccling Score</supports>
-            <description>
-            <p>Your Strength score increases by 1.</p>
-            </description>
-            <sheet display="false" />
-            <rules>
-            <stat name="strength" value="1" alt="Raccling Score" />
-            </rules>
-        </element>
-        <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_DEXTERITY">
-            <compendium display="false" />
-            <supports>Raccling Score</supports>
-            <description>
-            <p>Your Dexterity score increases by 1.</p>
-            </description>
-            <sheet display="false" />
-            <rules>
-            <stat name="dexterity" value="1" alt="Raccling Score" />
-            </rules>
-        </element>
-        <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_CONSTITUTION">
-            <compendium display="false" />
-            <supports>Raccling Score</supports>
-            <description>
-            <p>Your Constitution score increases by 1.</p>
-            </description>
-            <sheet display="false" />
-            <rules>
-            <stat name="constitution" value="1" alt="Raccling Score" />
-            </rules>
-        </element>
-        <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_INTELLIGENCE">
-            <compendium display="false" />
-            <supports>Raccling Score</supports>
-            <description>
-            <p>Your Intelligence score increases by 1.</p>
-            </description>
-            <sheet display="false" />
-            <rules>
-            <stat name="intelligence" value="1" alt="Raccling Score" />
-            </rules>
-        </element>
-        <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_WISDOM">
-            <compendium display="false" />
-            <supports>Raccling Score</supports>
-            <description>
-            <p>Your Wisdom score increases by 1.</p>
-            </description>
-            <sheet display="false" />
-            <rules>
-            <stat name="wisdom" value="1" alt="Raccling Score" />
-            </rules>
-        </element>
-        <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_RACCLING_SCORE_CHARISMA">
-            <compendium display="false" />
-            <supports>Raccling Score</supports>
-            <description>
-            <p>Your Charisma score increases by 1.</p>
-            </description>
-            <sheet display="false" />
-            <rules>
-            <stat name="charisma" value="1" alt="Raccling Score" />
-            </rules>
-        </element>
+    <!-- Sub Races-->
+    <element name="Lotorite Raccling" type="Sub Race" source="Jester" id="ID_SUB_RACE_LOTORITE_RACCLING">
+		<supports>Raccling</supports>
+		<description>
+			<p>The Lotoritee Racclingare culinary adventurers - seeking new tastes and flavors for their sturdy palette. Eating with reckless abandon over many lifetimes has allowed the Lotorite Racclingan iron gut for food that is more nefarious in nature. Because of their desire for new foods have gotten them in trouble in the past - they are able to escape sticky situations quicker than most of their Racclingsubrace siblings.</p>
+			<p class="indent"><strong><em>Iron Gut:</em></strong> Lotorite Racclings are known for thier large appetites, and can consume anything and everything. You gain advantage on saving throws against being poisoned.</p>
+			<p class="indent"><strong><em>Strong Grip:</em></strong> You have a climb of 20ft</p>
+            <p class="indent"><strong><em>Raccoon Roll:</em></strong> You can take the Disengage or Hide action as a bonus action on each of your turns. In addition, your movement speed inceases by 5 feet while you Disengage.</p> 
+		</description>
+		<sheet display="false" />
+	</element>
+    <element name="Larcenyx Raccling" type="Sub Race" source="Jester" id="ID_SUB_RACE_LARCENYX_RACCLING">
+		<supports>Raccling</supports>
+		<description>
+			<p>Thrifty Racclings who have found life in bigger urban areas have acclimaterd themselves futher to their surroundings. A city is yet another landscape waiting for adventure, and Larcenyx Racclingis ready to prowl. Larcenyx Racclings are known for their "Sticky Paws" - not afraid to gather extremely rare and shiny objects - no matter it's ownership.</p>
+			<p class="indent"><strong><em>Claws:</em></strong> Your claws are natual weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Sneaky Paws:</em></strong> You gain proficiency in Sleight of Hand. If you are already proficient in Sleight of Hand, or gain proficiency again in Sleight of Hand later on, you gain expertise instead.</p>
+			<p class="indent"><strong><em>Shinies Inspector:</em></strong> You have seen shiny objects and wondrous items to be familiar with what you find. Choose one object that you must touch for one minute. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, wheather it requires attunement tti use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it. You can use this ability a number of times equal to you proficiency bonus, and regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			
+		</rules>
+	</element>
+    <element name="Tanookin Raccling" type="Sub Race" source="Jester" id="ID_SUB_RACE_TANOOKIN_RACCLING">
+		<supports>Raccling</supports>
+		<description>
+			<p>Mythical Racclings said to have been the first of their kinds from the Faywunder - Gifted with the ability to transform into a statue - some Tanookin Shamans petrify themselves to adventure the current of time - allowing life to pass by - believing their petrification will cease once they are needed again.</p>
+			<p class="indent"><strong><em>Racc Pouch:</em></strong> Tanookins Racclings have a natural pouch that can hold 1 cubic foot/30 pounds of gear.</p>
+			<p class="indent"><strong><em>Staute Form:</em></strong> As an action you can transform into a statue form of your choice, as long as it is small size.</p>
+			<p>Until you revert, you gain the following.</p>
+			<ul>
+				<li>+4 bonus to AC,</li>
+				<li>Advantage on Strenght and Constitution saving throws.</li>
+				<li>The creature has Resistance to all damage.</li>
+				<li>Immunity to Charmed, Exhaustion, Frightened, Paralysis, Petrification, and Poisoned.</li>
+				<li>You are tarnsformed to stone, along with any nonmagical object you are wearing or carring.</li>
+				<li>Your weight increases by a factor of ten, and ceases aging.</li>
+				<li>You do not require breating, eating, drinking, or sleep while in this form</li>
+			</ul>
+			<p>While in statue form:</p>
+			<ul>
+				<li>Your speed is 0 and can't increase</li>
+				<li>You automatically fail Dexterity saving throws</li>
+				<li>You can't take reations</li>
+				<li>The only action you can take is a bonus action to revert back to your normal form.</li>
+			</ul>
+			<p>If you are killed in this form, you shatter into a pile of rubble. Once you use this feature, you must finish a long rest before you can use it again. If you remain in statue form for more than seven days, you can become petrified until freed by greater restoration spell or other magic.</p>
+		</description>
+		<sheet display="false"/>
+	</element>
+    <element name="Embertail Raccling" type="Sub Race" source="Jester" id="ID_SUB_RACE_EMBERTAIL_RACCLING">
+		<supports>Raccling</supports>
+		<description>
+			<p>An ancient Racclingfrom the Faywunder - Embertail Racclings have gained a mastery of fire - using their nature magicks to control wildfires that spark across their forested homes, allowing them to weaponize the dangerous flames.</p>
+			<p class="indent"><strong><em>Firestarter:</em></strong> You know the Firebolt and Control Flame cantrip. You can also cast Burning Hands once with this trait and regain the ability to do so when you finish a long rest. Your chosen ability score when making your character is spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Fire Affinity:</em></strong> When you roll fire damage for a spell you cast, you can reroll any of 1 on the fire damage dice, but you must use that new roll, even if it is another 1.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+		</rules>
+	</element>
+	<!--Raccling Ability Score Increase-->
+  <element name="Strength" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_STRENGTH">
+    <compendium display="false" />
+    <supports>Raccling 1</supports>
+    <description>
+      <p>Your Strength score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="strength" value="1" alt="Raccling" />
+    </rules>
+  </element>
+  <element name="Dexterity" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_DEXTERITY">
+    <compendium display="false" />
+    <supports>Raccling 1</supports>
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity" value="1" alt="Raccling" />
+    </rules>
+  </element>
+  <element name="Constitution" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_CONSTITUTION">
+    <compendium display="false" />
+    <supports>Raccling 1</supports>
+    <description>
+      <p>Your Constitution score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="constitution" value="1" alt="Raccling" />
+    </rules>
+  </element>
+  <element name="Intelligence" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_INTELLIGENCE">
+    <compendium display="false" />
+    <supports>Raccling 1</supports>
+    <description>
+      <p>Your Intelligence score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="intelligence" value="1" alt="Raccling" />
+    </rules>
+  </element>
+  <element name="Wisdom" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_WISDOM">
+    <compendium display="false" />
+    <supports>Raccling 1</supports>
+    <description>
+      <p>Your Wisdom score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="wisdom" value="1" alt="Raccling" />
+    </rules>
+  </element>
+  <element name="Charisma" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_CHARISMA">
+    <compendium display="false" />
+    <supports>Raccling 1</supports>
+    <description>
+      <p>Your Charisma score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="charisma" value="1" alt="Raccling" />
+    </rules>
+  </element>
+
+  <!--Raccling Ability Score Increase-->
+  <element name="Strength" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_STRENGTH_2">
+    <compendium display="false" />
+    <supports>Raccling 2</supports>
+    <description>
+      <p>Your Strength score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="strength" value="1" alt="Raccling" />
+    </rules>
+  </element>
+  <element name="Dexterity" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_DEXTERITY_2">
+    <compendium display="false" />
+    <supports>Raccling 2</supports>
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity" value="1" alt="Raccling" />
+    </rules>
+  </element>
+  <element name="Constitution" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_CONSTITUTION_2">
+    <compendium display="false" />
+    <supports>Raccling 2</supports>
+    <description>
+      <p>Your Constitution score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="constitution" value="1" alt="Raccling" />
+    </rules>
+  </element>
+  <element name="Intelligence" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_INTELLIGENCE_2">
+    <compendium display="false" />
+    <supports>Raccling 2</supports>
+    <description>
+      <p>Your Intelligence score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="intelligence" value="1" alt="Raccling" />
+    </rules>
+  </element>
+  <element name="Wisdom" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_WISDOM_2">
+    <compendium display="false" />
+    <supports>Raccling 2</supports>
+    <description>
+      <p>Your Wisdom score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="wisdom" value="1" alt="Raccling" />
+    </rules>
+  </element>
+  <element name="Charisma" type="Racial Trait" source="Jester" id="ID_RACE_VARIANT_RACCLING_CHARISMA_2">
+    <compendium display="false" />
+    <supports>Raccling 2</supports>
+    <description>
+      <p>Your Charisma score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="charisma" value="1" alt="Raccling" />
+    </rules>
+  </element>
 
 </elements>

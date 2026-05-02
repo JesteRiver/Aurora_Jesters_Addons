@@ -1,20 +1,32 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<elements>
+<?xml version="1.0" encoding="utf-8"?>
+<index>
 	<info>
+		<name>Jesters' Addons</name>
+		<description>Anything made by Jester.</description>
+		<author>Jester</author>
 		<update version="0.0.1">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/source.xml" />
+			<file name="jesters-addons.index" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/jesters-addons.index" />
 		</update>
 	</info>
-	<element name="Jesters' Addons" type="Source" source="Jester" id="ID_JA_SOURCE_JESTERS_ADDONS">
-		<description>
-			Anything made by Jester.
-		</description>
-		<setters>
-			<set name="abbreviation">JA</set>
-			<set name="author" abbreviation="J">Jester</set>
+    <element name="Jesters Addons" type="Source" source="source" id="ID_author_source_type_Jesters Addons">
+     <description>
+            <p>description</p>
+        </description>
+        <setters>
+			<set name="abbreviation">J</set>
+			<set name="url">https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/place%20holder.txt</set>
+			<set name="author" abbreviation="J" url="https://github.com/JesteRiver">Jester</set>
 			<set name="official">false</set>
 			<set name="core">false</set>
-			<set name="release">20260230</set>
+			<set name="release">20260502</set>
 		</setters>
-	</element>
-</elements>
+    </element>
+	<files>
+        <obsolete name="source.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/source.xml" />
+
+		<!-- races -->
+		<file name="race-raccling.xml" url="https://raw.githubusercontent.com/JesteRiver/Aurora_Jesters_Addons/refs/heads/main/race-raccling.xml" />
+
+        <!-- items -->
+    </files>
+</index>
